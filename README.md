@@ -4,6 +4,10 @@ Summary: A react-native youtube music download, converter and player app
 ### Introduction
 This app is original developed because one of the music player that I used to use to pull mp3 file from Google Drive is no longer working, moreover many friends and relative of mine want to have an app that allows them to download mp3 from youtube without paying HKD$80 per month for youtube premium. Thats why I wrote this app. When I was about to publish to apple for appstore distribution, apple rejected this app due to the app has ability to retrieve 3rd party content without 3rd party authorization. Thus I decide to open source this app, and allow anyone that interested with this app to build their own copy or modify this app for private use.
 
+#### Terms of Services
+http://ekhome.life/Apps/kisled-music_privacy_policy/TermsOfService.html
+if you decide to play with this app, please read the terms of service carefully. If you accept, you can start play around with it
+
 ### Capabilities
 - download youtube videos and convert them to mp3
 - save in your devices
@@ -15,6 +19,30 @@ This app is original developed because one of the music player that I used to us
 - library management
 
 ### Screenshots
+- Background playing
+<img src='/ScreenShots/background.jpeg' width="300">
+
+- player screen
+<p align="center">
+<img src='/ScreenShots/library1.jpeg' width="300">
+<img src='/ScreenShots/player2.jpeg' width="300">
+  </p>
+  
+- library screen
+<p align="center">
+<img src='/ScreenShots/player1.jpeg' width="300">
+<img src='/ScreenShots/library2.jpeg' width="300">
+  <img src='/ScreenShots/library3.jpeg' width="300">
+  <img src='/ScreenShots/library4.jpeg' width="300">
+  <img src='/ScreenShots/library5.jpeg' width="300">
+</p>
+
+- download screen
+<p align="center">
+<img src='/ScreenShots/download1.jpeg' width="300">
+<img src='/ScreenShots/download2.jpeg' width="300">
+  <img src='/ScreenShots/download3.jpeg' width="300">
+</p>
 
 ### libraries used
 
