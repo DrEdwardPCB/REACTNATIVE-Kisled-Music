@@ -1,107 +1,153 @@
+import React, { useEffect, useState } from 'react'
 import 'react-native-gesture-handler';
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { View, SafeAreaView, Image } from 'react-native'
-import PreferenceManager from './Manager/PreferenceManager';
-import PlayerManager from './Manager/PlayerManager';
-import { Icon } from './Manager/IconManager'
-import LibrariesManager from './Manager/LibrariesManager';
-import FileManager from './Manager/FileManager'
-import COLOR, { getStyle } from './StyleSheets/Theme'
-import PlayerScreen from './Screen/PlayerScreen'
-import LibraryScreen from './Screen/LibraryScreen'
-import PreferenceScreen from './Screen/PreferenceScreen'
-import DownloadScreen from './Screen/DownloadScreen'
+
+import { View, Image } from 'react-native'
+import AsyncStorage from '@react-native-community/async-storage'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import MasterReducer from './src/redux/MasterReducer'
+import { compareStore } from './src/utils/CompareStore'
+import PushNotificationIOS from '@react-native-community/push-notification-ios'
+import TrackPlayer from 'react-native-track-player';
+import MyTabs from './src/screens/Tab'
+import {
+  AdMobBanner,
+  AdMobInterstitial,
+} from 'react-native-admob'
 import { Host } from 'react-native-portalize'
+import { isPro } from './src/utils/Constant'
+import { Root } from 'native-base'
+import { Provider as PaperProvider } from 'react-native-paper'
 
-const Tab = createBottomTabNavigator();
+const initialStore = createStore(MasterReducer)
+export default function App() {
+  const [store, setStore] = useState(initialStore)
+  const [reduxReady, setReduxReady] = useState(false)
+  const [trackReady, setTrackReady] = useState(false)
+  const [adsReady, setAdReady] = useState(false)
 
-function MyTabs() {
+  //Redux and async storage setup
+  useEffect(() => {
+    AsyncStorage.getItem('savedStore')
+      .then((value) => {
+        if (value && value.length) {
+          const storedStore = createStore(MasterReducer, JSON.parse(value))
+          if (compareStore(storedStore.getState(), store.getState())) {
+            setStore(storedStore)
+            console.log('using async storage')
+          } else {
+            setStore(initialStore)
+            console.log('using default store')
+          }
+        } else {
+          setStore(initialStore)
+          console.log('not comparing')
+        }
+        setReduxReady(true)
+      })
+      .catch(() => {
+        setStore(initialStore)
+        console.log('error in getting async storage using initial')
+        setReduxReady(true)
+      })
+  }, [])
+
+  //push notification setup
+  useEffect(() => {
+    PushNotificationIOS.checkPermissions(({ alert, badge, sound }) => {
+      if (!(alert && badge && sound)) {
+        PushNotificationIOS.requestPermissions();
+      }
+    });
+
+    PushNotificationIOS.addEventListener('register', (token) => {
+      console.log('haha token')
+      console.log(token)
+    });
+    PushNotificationIOS.addEventListener('registrationError', (token) => {
+      console.log('haha token')
+      console.log(token)
+    });
+    return () => {
+      PushNotificationIOS.removeEventListener('register', () => {
+        console.log('success remove')
+      });
+      PushNotificationIOS.removeEventListener('registrationError', () => {
+        console.log('success remove')
+      });
+    }
+  }, [])
+  /*useEffect(()=>{
+    //ls()
+    checkFileAndCreate()
+    ScanDocumentDirectory(store.getState().library.all,dispatch).then((result)=>{
+      console.log('done scanning')
+      //ls()
+    })
+  })*/
+  //setup TrackPlayer
+  useEffect(() => {
+    TrackPlayer.setupPlayer().then(() => {
+      // The player is ready to be used
+      TrackPlayer.updateOptions({
+        capabilities: [
+          TrackPlayer.CAPABILITY_PLAY,
+          TrackPlayer.CAPABILITY_PAUSE,
+          TrackPlayer.CAPABILITY_SKIP_TO_NEXT,
+          TrackPlayer.CAPABILITY_SKIP_TO_PREVIOUS,
+          //TrackPlayer.CAPABILITY_STOP
+        ],
+      }).then(() => {
+        setTrackReady(true)
+      })
+    })
+  }, [])
+
+  useEffect(() => {
+    if (isPro) {
+      setAdReady(true)
+    } else {
+      if (Math.random() > 0.5) {
+        AdMobInterstitial.setAdUnitID('ca-app-pub-8656675425768497/4307319281');
+        AdMobInterstitial.requestAd().then(() => {
+          setAdReady(true)
+          AdMobInterstitial.showAd()
+        }).catch(() => {
+          setAdReady(true)
+        })
+      } else {
+        setAdReady(true)
+      }
+    }
+  }, [])
+  //subscribe to store change
+
+
+  if (reduxReady && trackReady && adsReady) {
+    return (
+      <Provider store={store}>
+        <Root>
+          <PaperProvider>
+            <Host>
+              <MyTabs />
+            </Host>
+            {isPro ? <View></View> :
+              <AdMobBanner
+                adSize="smartBannerPortrait"
+                adUnitID="ca-app-pub-8656675425768497/2994237613"
+                //testDevices={[AdMobBanner.simulatorId]}
+                onAdFailedToLoad={error => console.error(error)}
+              />
+            }
+          </PaperProvider>
+        </Root>
+      </Provider>
+
+    );
+  }
   return (
-    <Tab.Navigator>
-      <Tab.Screen name="Player" component={PlayerScreen} options={{ tabBarIcon: ({ focused, color, size }) => { return <Icon type="Fontisto" name="applemusic" color={color} size={size} style={{ color: color, fontSize: size }} /> }, unmountOnBlur: true }} />
-      <Tab.Screen name="Library" component={LibraryScreen} options={{ tabBarIcon: ({ focused, color, size }) => { return <Icon type="MaterialCommunityIcons" name="library-music" color={color} size={size} style={{ color: color, fontSize: size }} /> }, unmountOnBlur: true }} />
-      <Tab.Screen name="Downloads" component={DownloadScreen} options={{ tabBarIcon: ({ focused, color, size }) => { return <Icon type="Ionicons" name="ios-download" color={color} size={size} style={{ color: color, fontSize: size }} /> }, unmountOnBlur: true }} />
-      {/*<Tab.Screen name="Preference" component={PreferenceScreen} options={{ tabBarIcon: ({ focused, color, size }) => { return <Icon type="Entypo" name="select-arrows" color={color} size={size} style={{ color: color, fontSize: size }} /> }, unmountOnBlur: true }} />*/}
-    </Tab.Navigator>
+    <View>
+      
+    </View>
   );
-}
-
-export default class App extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      showSplash: true
-    }
-    //console.log(this.state)
-  }
-  componentDidMount() {
-    var async1 = new Promise((resolve, reject) => {
-      var interval = setInterval(() => {
-        var theme = PreferenceManager.getInstance().getPreferenceObject();
-        console.log("still not ready")
-        if (theme !== null) {
-          console.log("ready")
-          clearInterval(interval)
-          resolve()
-        }
-      }, 300)
-    })
-    var async2 = new Promise((resolve, reject) => {
-      var interval1 = setInterval(() => {
-        var ready = PlayerManager.getInstance().isReady();
-        console.log("still not ready")
-        if (ready) {
-          console.log("ready")
-          clearInterval(interval1)
-          resolve()
-        }
-      }, 300)
-    })
-    var async3 = new Promise((resolve, reject) => {
-      var interval3 = setInterval(() => {
-        var ready = LibrariesManager.getInstance().isReady();
-        console.log("still not ready")
-        if (ready) {
-          console.log("ready")
-          clearInterval(interval3)
-          resolve()
-        }
-      }, 300)
-    })
-    var async4 = new Promise((resolve, reject) => {
-      var interval4 = setInterval(() => {
-        var ready = FileManager.getInstance().isReady();
-        console.log("still not ready")
-        if (ready) {
-          console.log("ready")
-          clearInterval(interval4)
-          resolve()
-        }
-      }, 300)
-    })
-    Promise.all([async1, async2, async3, async4]).then(() => this.setState({ showSplash: false }))
-  }
-  render() {
-    if (this.state.showSplash) {
-      return (
-        <View>
-          <SafeAreaView>
-            <Image source={require("./assest/Appsplash.png")} resizeMode='contain' style={{ alignContent: 'center', justifyContent: 'center', width: '100%', height: '100%' }}></Image>
-          </SafeAreaView>
-        </View>
-      )
-    }
-    else {
-      return (
-        <NavigationContainer>
-          <Host>
-            <MyTabs />
-          </Host>
-        </NavigationContainer>
-      );
-    }
-
-  }
 }

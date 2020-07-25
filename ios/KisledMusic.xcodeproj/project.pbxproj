@@ -7,57 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06137A33171EF72A7D90EC16 /* libPods-KisledMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A949A6F7473BCE7C94456A /* libPods-KisledMusic.a */; };
+		133F9E6D24C40C26004F8104 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 133F9E6C24C40C26004F8104 /* Images.xcassets */; };
+		133F9E6F24C40E34004F8104 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133F9E6E24C40E34004F8104 /* Launch Screen.storyboard */; };
+		1364AEA924B6AE76005AC89B /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1364AEA824B6AE76005AC89B /* dummy.swift */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		27E07A22244A9CB00032AF2D /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E07A21244A9CB00032AF2D /* dummy.swift */; };
+		5D80A2DE0558F49BBAB82752 /* libPods-KisledMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A5B6B384A35DBDC18009DD /* libPods-KisledMusic.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* KisledMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KisledMusicTests.m; sourceTree = "<group>"; };
-		02D7AC9B21291CDD4118E516 /* Pods-KisledMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic.release.xcconfig"; path = "Target Support Files/Pods-KisledMusic/Pods-KisledMusic.release.xcconfig"; sourceTree = "<group>"; };
-		0E22C9F37DA5198C93760F4B /* Pods-KisledMusic-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-KisledMusic-tvOSTests/Pods-KisledMusic-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		079218C79244433C8F392D0E /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		133F9E6C24C40C26004F8104 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		133F9E6E24C40E34004F8104 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1364AEA724B6AE76005AC89B /* KisledMusic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KisledMusic-Bridging-Header.h"; sourceTree = "<group>"; };
+		1364AEA824B6AE76005AC89B /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
+		1364AEAA24B6AEA8005AC89B /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		1364AEAB24B6AEA8005AC89B /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		1364AEAC24B6AEA8005AC89B /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		1364AEAD24B6AEA8005AC89B /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		1364AEAE24B6AEA8005AC89B /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		1364AEAF24B6AEA8005AC89B /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		1364AEB024B6AEA8005AC89B /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		1364AEB124B6AEA8005AC89B /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		1364AEB224B6AEA8005AC89B /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		1364AEB324B6AEA8005AC89B /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		1364AEB424B6AEA8005AC89B /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		1364AEB524B6AEA8005AC89B /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		1364AEB624B6AEA8005AC89B /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		1364AEB724B6AEA9005AC89B /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		1364AEB824B6AEA9005AC89B /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		1364AEB924B6AEA9005AC89B /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* KisledMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KisledMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KisledMusic/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = KisledMusic/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KisledMusic/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = KisledMusic/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KisledMusic/main.m; sourceTree = "<group>"; };
-		27E07A20244A9CAF0032AF2D /* KisledMusic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KisledMusic-Bridging-Header.h"; sourceTree = "<group>"; };
-		27E07A21244A9CB00032AF2D /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
-		27E07A23244A9D670032AF2D /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
-		27E07A24244A9D670032AF2D /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
-		27E07A25244A9D670032AF2D /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
-		27E07A26244A9D670032AF2D /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
-		27E07A27244A9D670032AF2D /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
-		27E07A28244A9D680032AF2D /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
-		27E07A29244A9D680032AF2D /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
-		27E07A2A244A9D680032AF2D /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
-		27E07A2B244A9D680032AF2D /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
-		27E07A2C244A9D680032AF2D /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
-		27E07A2D244A9D680032AF2D /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
-		27E07A2E244A9D680032AF2D /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
-		27E07A2F244A9D680032AF2D /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
-		27E07A30244A9D680032AF2D /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
-		27E07A31244A9D690032AF2D /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
-		27E07A32244A9D690032AF2D /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
-		2D73B43A908EB9B43DBE81F7 /* libPods-KisledMusic-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KisledMusic-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D90DE84B67B50684C69791E /* Pods-KisledMusic-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-KisledMusic-tvOSTests/Pods-KisledMusic-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		41C005535AFC1E188B7C2AAC /* Pods-KisledMusic-KisledMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic-KisledMusicTests.release.xcconfig"; path = "Target Support Files/Pods-KisledMusic-KisledMusicTests/Pods-KisledMusic-KisledMusicTests.release.xcconfig"; sourceTree = "<group>"; };
-		76A949A6F7473BCE7C94456A /* libPods-KisledMusic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KisledMusic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7724206C772DF387AD65447C /* libPods-KisledMusic-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KisledMusic-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		807FC986CDE101C52AD9B179 /* Pods-KisledMusic-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic-tvOS.release.xcconfig"; path = "Target Support Files/Pods-KisledMusic-tvOS/Pods-KisledMusic-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		848BAB07C1D8912F136E10DB /* libPods-KisledMusic-KisledMusicTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KisledMusic-KisledMusicTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBB4254CA7489CD6BAC03A53 /* Pods-KisledMusic-KisledMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic-KisledMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-KisledMusic-KisledMusicTests/Pods-KisledMusic-KisledMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C93C7707A6D6499B70879752 /* Pods-KisledMusic-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-KisledMusic-tvOS/Pods-KisledMusic-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		E71D7FCD6DEA431051ABA22E /* Pods-KisledMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic.debug.xcconfig"; path = "Target Support Files/Pods-KisledMusic/Pods-KisledMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		13F9249A24B85E880076E841 /* KisledMusic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = KisledMusic.entitlements; path = KisledMusic/KisledMusic.entitlements; sourceTree = "<group>"; };
+		274DDB4487384EE6A51C7B48 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		296B36202C374468A89570A1 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		38CE5E8A42064892ABAC3351 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/native-base/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		39A5B6B384A35DBDC18009DD /* libPods-KisledMusic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KisledMusic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4762B8B67A45D8BAB64653 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		4F3D5621AA254A33B9E52580 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
+		522DFA37C2094106BA694C42 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		649A95FD8328C1A27513921D /* Pods-KisledMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic.debug.xcconfig"; path = "Target Support Files/Pods-KisledMusic/Pods-KisledMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		674895D8F0FA21DE3C6DBDDE /* libPods-KisledMusic-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KisledMusic-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		783AAF35317A8832D104F891 /* Pods-KisledMusic-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-KisledMusic-tvOSTests/Pods-KisledMusic-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		7B643C1E64DC41B282277DD1 /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
+		7CC51447A71F469B0E25BC0B /* libPods-KisledMusic-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KisledMusic-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		805817179F364E708CACB169 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		845702AAEDF448FCA4A85529 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		89B3EB925F484255825294FE /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
+		938ACE3FD9013A9D4C01D690 /* Pods-KisledMusic-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-KisledMusic-tvOS/Pods-KisledMusic-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A96C61253D4F8050ABF1CB9F /* libPods-KisledMusic-KisledMusicTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KisledMusic-KisledMusicTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF77FBDB02341CD84525316 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		B25D3029C89E47D5B86C3320 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		B49B80DA0F0953E5DF77CCD0 /* Pods-KisledMusic-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic-tvOS.release.xcconfig"; path = "Target Support Files/Pods-KisledMusic-tvOS/Pods-KisledMusic-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		C688245A05D6405BBC29BFF0 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		CE425381CDDA48C49C512B39 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		D3C38510962448EFAA1BEB87 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		E49E334F40974A6586EC41FF /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F3343C33075C4365B218897A /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		F3BF4FB888C1FE474DE83F7C /* Pods-KisledMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic.release.xcconfig"; path = "Target Support Files/Pods-KisledMusic/Pods-KisledMusic.release.xcconfig"; sourceTree = "<group>"; };
+		F3E8160968A32E91049B9D5B /* Pods-KisledMusic-KisledMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic-KisledMusicTests.release.xcconfig"; path = "Target Support Files/Pods-KisledMusic-KisledMusicTests/Pods-KisledMusic-KisledMusicTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5480640AFEA43F1AD69C49E /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		F8A0D3F1E0A30B2559DBA01D /* Pods-KisledMusic-KisledMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic-KisledMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-KisledMusic-KisledMusicTests/Pods-KisledMusic-KisledMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8C9A21CF974BF5C2C3DA3E0 /* Pods-KisledMusic-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisledMusic-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-KisledMusic-tvOSTests/Pods-KisledMusic-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06137A33171EF72A7D90EC16 /* libPods-KisledMusic.a in Frameworks */,
+				5D80A2DE0558F49BBAB82752 /* libPods-KisledMusic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,13 +112,14 @@
 		13B07FAE1A68108700A75B9A /* KisledMusic */ = {
 			isa = PBXGroup;
 			children = (
+				13F9249A24B85E880076E841 /* KisledMusic.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
-				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				133F9E6C24C40C26004F8104 /* Images.xcassets */,
+				133F9E6E24C40E34004F8104 /* Launch Screen.storyboard */,
 			);
 			name = KisledMusic;
 			sourceTree = "<group>";
@@ -108,27 +129,38 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				76A949A6F7473BCE7C94456A /* libPods-KisledMusic.a */,
-				848BAB07C1D8912F136E10DB /* libPods-KisledMusic-KisledMusicTests.a */,
-				2D73B43A908EB9B43DBE81F7 /* libPods-KisledMusic-tvOS.a */,
-				7724206C772DF387AD65447C /* libPods-KisledMusic-tvOSTests.a */,
+				39A5B6B384A35DBDC18009DD /* libPods-KisledMusic.a */,
+				A96C61253D4F8050ABF1CB9F /* libPods-KisledMusic-KisledMusicTests.a */,
+				674895D8F0FA21DE3C6DBDDE /* libPods-KisledMusic-tvOS.a */,
+				7CC51447A71F469B0E25BC0B /* libPods-KisledMusic-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6619CA588D67283988B721EC /* Pods */ = {
+		381C8F850C6146D9B514CB2C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E71D7FCD6DEA431051ABA22E /* Pods-KisledMusic.debug.xcconfig */,
-				02D7AC9B21291CDD4118E516 /* Pods-KisledMusic.release.xcconfig */,
-				BBB4254CA7489CD6BAC03A53 /* Pods-KisledMusic-KisledMusicTests.debug.xcconfig */,
-				41C005535AFC1E188B7C2AAC /* Pods-KisledMusic-KisledMusicTests.release.xcconfig */,
-				C93C7707A6D6499B70879752 /* Pods-KisledMusic-tvOS.debug.xcconfig */,
-				807FC986CDE101C52AD9B179 /* Pods-KisledMusic-tvOS.release.xcconfig */,
-				0E22C9F37DA5198C93760F4B /* Pods-KisledMusic-tvOSTests.debug.xcconfig */,
-				3D90DE84B67B50684C69791E /* Pods-KisledMusic-tvOSTests.release.xcconfig */,
+				B25D3029C89E47D5B86C3320 /* AntDesign.ttf */,
+				D3C38510962448EFAA1BEB87 /* Entypo.ttf */,
+				F3343C33075C4365B218897A /* EvilIcons.ttf */,
+				274DDB4487384EE6A51C7B48 /* Feather.ttf */,
+				805817179F364E708CACB169 /* FontAwesome.ttf */,
+				079218C79244433C8F392D0E /* FontAwesome5_Brands.ttf */,
+				F5480640AFEA43F1AD69C49E /* FontAwesome5_Regular.ttf */,
+				CE425381CDDA48C49C512B39 /* FontAwesome5_Solid.ttf */,
+				38CE5E8A42064892ABAC3351 /* Fontisto.ttf */,
+				ADF77FBDB02341CD84525316 /* Foundation.ttf */,
+				E49E334F40974A6586EC41FF /* Ionicons.ttf */,
+				845702AAEDF448FCA4A85529 /* MaterialCommunityIcons.ttf */,
+				C688245A05D6405BBC29BFF0 /* MaterialIcons.ttf */,
+				296B36202C374468A89570A1 /* Octicons.ttf */,
+				89B3EB925F484255825294FE /* Roboto_medium.ttf */,
+				7B643C1E64DC41B282277DD1 /* Roboto.ttf */,
+				4F3D5621AA254A33B9E52580 /* rubicon-icon-font.ttf */,
+				522DFA37C2094106BA694C42 /* SimpleLineIcons.ttf */,
+				3F4762B8B67A45D8BAB64653 /* Zocial.ttf */,
 			);
-			path = Pods;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -141,30 +173,31 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				27E07A31244A9D690032AF2D /* AntDesign.ttf */,
-				27E07A26244A9D670032AF2D /* Entypo.ttf */,
-				27E07A2E244A9D680032AF2D /* EvilIcons.ttf */,
-				27E07A27244A9D670032AF2D /* Feather.ttf */,
-				27E07A30244A9D680032AF2D /* FontAwesome.ttf */,
-				27E07A2F244A9D680032AF2D /* FontAwesome5_Brands.ttf */,
-				27E07A32244A9D690032AF2D /* FontAwesome5_Regular.ttf */,
-				27E07A2A244A9D680032AF2D /* FontAwesome5_Solid.ttf */,
-				27E07A25244A9D670032AF2D /* Fontisto.ttf */,
-				27E07A23244A9D670032AF2D /* Foundation.ttf */,
-				27E07A2D244A9D680032AF2D /* Ionicons.ttf */,
-				27E07A29244A9D680032AF2D /* MaterialCommunityIcons.ttf */,
-				27E07A28244A9D680032AF2D /* MaterialIcons.ttf */,
-				27E07A24244A9D670032AF2D /* Octicons.ttf */,
-				27E07A2C244A9D680032AF2D /* SimpleLineIcons.ttf */,
-				27E07A2B244A9D680032AF2D /* Zocial.ttf */,
-				27E07A21244A9CB00032AF2D /* dummy.swift */,
+				1364AEA824B6AE76005AC89B /* dummy.swift */,
+				1364AEB724B6AEA9005AC89B /* AntDesign.ttf */,
+				1364AEAB24B6AEA8005AC89B /* Entypo.ttf */,
+				1364AEB524B6AEA8005AC89B /* EvilIcons.ttf */,
+				1364AEAD24B6AEA8005AC89B /* Feather.ttf */,
+				1364AEAF24B6AEA8005AC89B /* FontAwesome.ttf */,
+				1364AEB424B6AEA8005AC89B /* FontAwesome5_Brands.ttf */,
+				1364AEB324B6AEA8005AC89B /* FontAwesome5_Regular.ttf */,
+				1364AEAA24B6AEA8005AC89B /* FontAwesome5_Solid.ttf */,
+				1364AEB224B6AEA8005AC89B /* Fontisto.ttf */,
+				1364AEB024B6AEA8005AC89B /* Foundation.ttf */,
+				1364AEAC24B6AEA8005AC89B /* Ionicons.ttf */,
+				1364AEB624B6AEA8005AC89B /* MaterialCommunityIcons.ttf */,
+				1364AEAE24B6AEA8005AC89B /* MaterialIcons.ttf */,
+				1364AEB824B6AEA9005AC89B /* Octicons.ttf */,
+				1364AEB124B6AEA8005AC89B /* SimpleLineIcons.ttf */,
+				1364AEB924B6AEA9005AC89B /* Zocial.ttf */,
 				13B07FAE1A68108700A75B9A /* KisledMusic */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* KisledMusicTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				6619CA588D67283988B721EC /* Pods */,
-				27E07A20244A9CAF0032AF2D /* KisledMusic-Bridging-Header.h */,
+				BEFD83E2BEBFAE2F165D8236 /* Pods */,
+				1364AEA724B6AE76005AC89B /* KisledMusic-Bridging-Header.h */,
+				381C8F850C6146D9B514CB2C /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -179,6 +212,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BEFD83E2BEBFAE2F165D8236 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				649A95FD8328C1A27513921D /* Pods-KisledMusic.debug.xcconfig */,
+				F3BF4FB888C1FE474DE83F7C /* Pods-KisledMusic.release.xcconfig */,
+				F8A0D3F1E0A30B2559DBA01D /* Pods-KisledMusic-KisledMusicTests.debug.xcconfig */,
+				F3E8160968A32E91049B9D5B /* Pods-KisledMusic-KisledMusicTests.release.xcconfig */,
+				938ACE3FD9013A9D4C01D690 /* Pods-KisledMusic-tvOS.debug.xcconfig */,
+				B49B80DA0F0953E5DF77CCD0 /* Pods-KisledMusic-tvOS.release.xcconfig */,
+				F8C9A21CF974BF5C2C3DA3E0 /* Pods-KisledMusic-tvOSTests.debug.xcconfig */,
+				783AAF35317A8832D104F891 /* Pods-KisledMusic-tvOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,13 +234,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "KisledMusic" */;
 			buildPhases = (
-				BF3427D238EE7790B2CA6EBB /* [CP] Check Pods Manifest.lock */,
+				B762DE3694FA17022AA00F54 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				A436D88832104ADEA367824B /* [CP] Copy Pods Resources */,
+				56FB6F8B46025E16332ED9F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,7 +261,7 @@
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 49XG5J7387;
-						LastSwiftMigration = 1130;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -240,8 +288,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				133F9E6F24C40E34004F8104 /* Launch Screen.storyboard in Resources */,
+				133F9E6D24C40C26004F8104 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +308,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		A436D88832104ADEA367824B /* [CP] Copy Pods Resources */ = {
+		56FB6F8B46025E16332ED9F0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -285,6 +333,7 @@
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -304,13 +353,14 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KisledMusic/Pods-KisledMusic-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BF3427D238EE7790B2CA6EBB /* [CP] Check Pods Manifest.lock */ = {
+		B762DE3694FA17022AA00F54 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -359,39 +409,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				27E07A22244A9CB00032AF2D /* dummy.swift in Sources */,
+				1364AEA924B6AE76005AC89B /* dummy.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13B07FB21A68108700A75B9A /* Base */,
-			);
-			name = LaunchScreen.xib;
-			path = KisledMusic;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E71D7FCD6DEA431051ABA22E /* Pods-KisledMusic.debug.xcconfig */;
+			baseConfigurationReference = 649A95FD8328C1A27513921D /* Pods-KisledMusic.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CODE_SIGN_ENTITLEMENTS = KisledMusic/KisledMusic.entitlements;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 49XG5J7387;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_BITCODE = NO;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"FB_SONARKIT_ENABLED=1",
-				);
 				INFOPLIST_FILE = KisledMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -399,7 +435,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = life.ekhome.KisledMusic;
+				PRODUCT_BUNDLE_IDENTIFIER = life.ekhome.rebake.KisledMusic;
 				PRODUCT_NAME = KisledMusic;
 				SWIFT_OBJC_BRIDGING_HEADER = "KisledMusic-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -410,12 +446,14 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02D7AC9B21291CDD4118E516 /* Pods-KisledMusic.release.xcconfig */;
+			baseConfigurationReference = F3BF4FB888C1FE474DE83F7C /* Pods-KisledMusic.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CODE_SIGN_ENTITLEMENTS = KisledMusic/KisledMusic.entitlements;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 49XG5J7387;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				INFOPLIST_FILE = KisledMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -423,7 +461,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = life.ekhome.KisledMusic;
+				PRODUCT_BUNDLE_IDENTIFIER = life.ekhome.rebake.KisledMusic;
 				PRODUCT_NAME = KisledMusic;
 				SWIFT_OBJC_BRIDGING_HEADER = "KisledMusic-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -478,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
@@ -531,7 +569,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",

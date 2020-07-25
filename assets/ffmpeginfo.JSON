@@ -1,0 +1,66 @@
+//is MP3
+{
+  "bitrate": 205,
+  "duration": 630260,
+  "format": "mp3",
+  "metadata": {
+    "compatible_brands": "iso6mp41",
+    "encoder": "Lavf58.29.100",
+    "major_brand": "dash",
+    "minor_version": "0"
+  },
+  "path": "/Users/edwardwong/Library/Developer/CoreSimulator/Devices/E0C3DD48-E4C9-44A5-B79D-EA23A1AFB364/data/Containers/Data/Application/B1A4B11C-C132-472C-B2D2-ED5AC335E9D1/Documents/temp/5DD43FA6-21F5-4738-ACD7-F88E3FF43683.mp3",
+  "rawInformation": "Input #0, mp3, from '/Users/edwardwong/Library/Developer/CoreSimulator/Devices/E0C3DD48-E4C9-44A5-B79D-EA23A1AFB364/data/Containers/Data/Application/B1A4B11C-C132-472C-B2D2-ED5AC335E9D1/Documents/temp/5DD43FA6-21F5-4738-ACD7-F88E3FF43683.mp3':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf58.29.100
+  Duration: 00: 10: 30.26, start: 0.025057, bitrate: 205 kb/s
+    Stream #0: 0: Audio: mp3,
+  44100 Hz, stereo, fltp,
+  205 kb/s
+    Metadata:
+      encoder         : Lavc58.54
+
+", "startTime": 26, "streams": [{"bitrate": 205, "channelLayout": "stereo", "codec": "mp3", "fullCodec": "mp3", "index": 0, "metadata": [Object], "sampleFormat": "fltp", "sampleRate": 44100, "type": "audio"}]}
+  //is not mp3
+  {
+    "path": "/Users/edwardwong/Library/Developer/CoreSimulator/Devices/E0C3DD48-E4C9-44A5-B79D-EA23A1AFB364/data/Containers/Data/Application/5A1001F3-3BD3-4BB2-89E0-D0F76693A65A/Documents/temp/CDE4B50B-776C-4FD3-AA3C-6F11A5CB2176.mp3",
+    "startTime": 0,
+    "rawInformation": "Format mp3 detected only with low score of 1, misdetection possible!\nHeader missing\ndecoding for stream 0 failed\nCould not find codec parameters for stream 0 (Audio: mp3 (mp3float), 0 channels, fltp): unspecified frame size\nConsider increasing the value for the 'analyzeduration' and 'probesize' options\nInput #0, mp3, from '/Users/edwardwong/Library/Developer/CoreSimulator/Devices/E0C3DD48-E4C9-44A5-B79D-EA23A1AFB364/data/Containers/Data/Application/5A1001F3-3BD3-4BB2-89E0-D0F76693A65A/Documents/temp/CDE4B50B-776C-4FD3-AA3C-6F11A5CB2176.mp3':\n  Duration: N/A, start: 0.000000, bitrate: N/A\n    Stream #0:0: Audio: mp3, 0 channels, fltp\n\n",
+    "streams": [
+      {
+        "codec": "mp3",
+        "index": 0,
+        "sampleRate": 0,
+        "type": "audio",
+        "fullCodec": "mp3",
+        "channelLayout": "fltp"
+      }
+    ],
+    "format": "mp3"
+  }
+  //or can be 
+  {
+    "path": "/Users/edwardwong/Library/Developer/CoreSimulator/Devices/E0C3DD48-E4C9-44A5-B79D-EA23A1AFB364/data/Containers/Data/Application/5A1001F3-3BD3-4BB2-89E0-D0F76693A65A/Documents/temp/4397E910-D27F-4BB2-8E62-C09B373DD5BC.mp3",
+    "rawInformation": "Input #0, png_pipe, from '/Users/edwardwong/Library/Developer/CoreSimulator/Devices/E0C3DD48-E4C9-44A5-B79D-EA23A1AFB364/data/Containers/Data/Application/5A1001F3-3BD3-4BB2-89E0-D0F76693A65A/Documents/temp/4397E910-D27F-4BB2-8E62-C09B373DD5BC.mp3':\n  Duration: N/A, bitrate: N/A\n    Stream #0:0: Video: png, rgb24(pc), 1024x1024 [SAR 11810:11810 DAR 1:1], 25 tbr, 25 tbn, 25 tbc\n\n",
+    "streams": [
+      {
+        "codec": "png",
+        "height": 1024,
+        "index": 0,
+        "sampleAspectRatio": "11810:11810",
+        "realFrameRate": "25",
+        "width": 1024,
+        "codecTimeBase": "25",
+        "format": "rgb24",
+        "fullCodec": "png",
+        "type": "video",
+        "displayAspectRatio": "1:1",
+        "fullFormat": "rgb24(pc)",
+        "timeBase": "25"
+      }
+    ],
+    "format": "png_pipe"
+  }
